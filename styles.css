@@ -1,0 +1,244 @@
+
+/*  couleur de la page  */ 
+
+body {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white; 
+}
+
+
+/*  placement de menu   */ 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/*  personnaliser le menu  */  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8); /* Blanc avec une opacité de 0.8 */
+}
+
+/*  couleur , emplacement et taille de titre h1  */  
+ h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.5em;
+    margin: 0; 
+    text-align: center; 
+}
+
+
+
+/*  animation et taille et position de les images   */  
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    overflow: hidden; 
+}
+
+.prnc {
+    width: 400px; 
+    height: auto;
+    margin: 0 10px; 
+    flex-shrink: 0; 
+}
+
+.accueil img {
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/*   animation pour la categorie tendances */  
+
+.img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%; 
+}
+
+
+
+.slider {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.image-wrapper.auto-scroll {
+    animation: scroll 13s infinite;
+}
+
+
+
+/* le footer de la page */
+
+.pied-page {
+    text-align: left;
+    padding: 20px;
+    background-color: #0d0d0d86;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737171;
+}
+
+.pied-page dl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pied-page dl li {
+    margin-bottom: 5px;
+}
+
+.infos-contact {
+    margin-left: auto;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.lien-email {
+    text-decoration: none;
+}
+
+.lien-email img {
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.review {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    font-size: 20px;
+    color: gold;
+}
+
+.score {
+    margin-left: 10px;
+    font-weight: bold;
+}
+html, body {
+    scroll-behavior: smooth;
+  }
+ 
+  h2 {
+    margin-top: 50px;
+  }
+  .top-liste {
+    list-style: none;
+    padding: 0;
+  }
+ 
+  .film {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+ 
+  .film img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+ 
+  .film .infos {
+    flex: 1;
+  }
+ 
+  .film h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+ 
+  .film p {
+    margin: 0;
+  }
+
+
+  a.lien-tendance {
+    text-decoration: none; 
+    color: #3498db;
+    font-weight: bold; 
+    transition: color 0.3s ease-in-out; 
+}
+
+a.lien-tendance:hover {
+    color: #e74c3c; 
+}
