@@ -27,5 +27,5 @@
 
 1. **Cloner le projet** :
    ```bash
-   git clone https://github.com/AbdelBakiY/mon_premier_site.git
+   git clone https://github.com/AbdelBakiY/mon_premier_site
    cd mon_premier_site
